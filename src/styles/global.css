@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.logo-el {
+    @apply m-auto absolute w-full h-full;
+}
