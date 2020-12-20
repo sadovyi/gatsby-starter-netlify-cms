@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Logo from "../components/Logo";
 
 export const IndexPageTemplate = ({
   image,
@@ -16,6 +17,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
+    <Logo/>
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -26,18 +28,9 @@ export const IndexPageTemplate = ({
         backgroundAttachment: `fixed`,
       }}
     >
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
-        }}
-      >
+      <div>
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="border-4"
           style={{
             boxShadow:
               'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
@@ -110,6 +103,9 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <h2 className='font-sans text-lg'>Test title</h2>
     </section>
   </div>
 )
